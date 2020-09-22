@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.AreaMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.AreaPojo" id="areaMap">
+        <result column="area_id"  property="areaId" />
+        <result column="area_name"  property="areaName" />
+        <result column="area_code"  property="areaCode" />
+        <result column="p_id"  property="pId" />
+        <result column="del_flg"  property="delFlg" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="remark"  property="remark" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			area_id  , 
+     		     			area_name  , 
+     		     			area_code  , 
+     		     			p_id  , 
+     		     			del_flg  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			remark 
+     		 		 </sql>
+    
+</mapper>

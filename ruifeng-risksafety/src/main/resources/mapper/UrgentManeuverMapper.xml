@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.UrgentManeuverMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.UrgentManeuverPojo" id="urgentManeuverMap">
+        <result column="man_id"  property="manId" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="CODE"  property="code" />
+        <result column="man_name"  property="manName" />
+        <result column="man_time"  property="manTime" />
+        <result column="person"  property="person" />
+        <result column="phone"  property="phone" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			man_id  , 
+     		     			cmy_id  , 
+     		     			CODE  , 
+     		     			man_name  , 
+     		     			man_time  , 
+     		     			person  , 
+     		     			phone  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

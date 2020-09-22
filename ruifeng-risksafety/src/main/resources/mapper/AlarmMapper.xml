@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.AlarmMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.AlarmPojo" id="alarmMap">
+        <result column="alert_id"  property="alertId" />
+        <result column="alert_name"  property="alertName" />
+        <result column="alert_location"  property="alertLocation" />
+        <result column="alert_time"  property="alertTime" />
+        <result column="alert_person"  property="alertPerson" />
+        <result column="person"  property="person" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			alert_id  , 
+     		     			alert_name  , 
+     		     			alert_location  , 
+     		     			alert_time  , 
+     		     			alert_person  , 
+     		     			person  , 
+     		     			cmy_id  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

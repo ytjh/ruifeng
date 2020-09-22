@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.CautionMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.CautionPojo" id="cautionMap">
+        <result column="war_id"  property="warId" />
+        <result column="war_location"  property="warLocation" />
+        <result column="war_description"  property="warDescription" />
+        <result column="dispose"  property="dispose" />
+        <result column="person"  property="person" />
+        <result column="implementation"  property="implementation" />
+        <result column="isno_prompt"  property="isnoPrompt" />
+        <result column="pro_state"  property="proState" />
+        <result column="war_type"  property="warType" />
+        <result column="war_viod"  property="warViod" />
+        <result column="war_param"  property="warParam" />
+        <result column="sensor_coordinate"  property="sensorCoordinate" />
+        <result column="viod_photo"  property="viodPhoto" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			war_id  , 
+     		     			war_location  , 
+     		     			war_description  , 
+     		     			dispose  , 
+     		     			person  , 
+     		     			implementation  , 
+     		     			isno_prompt  , 
+     		     			pro_state  , 
+     		     			war_type  , 
+     		     			war_viod  , 
+     		     			war_param  , 
+     		     			sensor_coordinate  , 
+     		     			viod_photo  , 
+     		     			cmy_id  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.OrgMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.OrgPojo" id="orgMap">
+        <result column="org_id"  property="orgId" />
+        <result column="area_id"  property="areaId" />
+        <result column="p_id"  property="pId" />
+        <result column="org_code"  property="orgCode" />
+        <result column="org_name"  property="orgName" />
+        <result column="org_short_name"  property="orgShortName" />
+        <result column="register_area"  property="registerArea" />
+        <result column="actual_area"  property="actualArea" />
+        <result column="credit_code"  property="creditCode" />
+        <result column="legal_person"  property="legalPerson" />
+        <result column="legal_person_phone"  property="legalPersonPhone" />
+        <result column="trade_type"  property="tradeType" />
+        <result column="safe_type"  property="safeType" />
+        <result column="supervision_department"  property="supervisionDepartment" />
+        <result column="grid"  property="grid" />
+        <result column="management_status"  property="managementStatus" />
+        <result column="scale"  property="scale" />
+        <result column="plan_pic"  property="planPic" />
+        <result column="emergency_dispersion_pic"  property="emergencyDispersionPic" />
+        <result column="gate_direction"  property="gateDirection" />
+        <result column="east_near"  property="eastNear" />
+        <result column="west_near"  property="westNear" />
+        <result column="south_near"  property="southNear" />
+        <result column="north_near"  property="northNear" />
+        <result column="safe_standard_grade"  property="safeStandardGrade" />
+        <result column="standard_grade_valid"  property="standardGradeValid" />
+        <result column="standard_grade_pic"  property="standardGradePic" />
+        <result column="status"  property="status" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+        <result column="remark"  property="remark" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			org_id  , 
+     		     			area_id  , 
+     		     			p_id  , 
+     		     			org_code  , 
+     		     			org_name  , 
+     		     			org_short_name  , 
+     		     			register_area  , 
+     		     			actual_area  , 
+     		     			credit_code  , 
+     		     			legal_person  , 
+     		     			legal_person_phone  , 
+     		     			trade_type  , 
+     		     			safe_type  , 
+     		     			supervision_department  , 
+     		     			grid  , 
+     		     			management_status  , 
+     		     			scale  , 
+     		     			plan_pic  , 
+     		     			emergency_dispersion_pic  , 
+     		     			gate_direction  , 
+     		     			east_near  , 
+     		     			west_near  , 
+     		     			south_near  , 
+     		     			north_near  , 
+     		     			safe_standard_grade  , 
+     		     			standard_grade_valid  , 
+     		     			standard_grade_pic  , 
+     		     			status  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg  , 
+     		     			remark 
+     		 		 </sql>
+    
+</mapper>

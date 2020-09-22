@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruifeng.mapper.SysMapper">
+
+    <resultMap type="com.ruifeng.pojo.SysDemo" id="sysDemo">
+        <id     property="id"      column="id"      />
+        <result property="name"    column="name"    />
+    </resultMap>
+
+    <select id="getById" resultType="com.ruifeng.pojo.SysDemo">
+        select *
+		from sys_demo where id=1
+    </select>
+
+    <insert id="insert" >
+        insert into sys_demo (
+		name
+        )values(
+			'ssss'
+		)
+    </insert>
+    
+</mapper>

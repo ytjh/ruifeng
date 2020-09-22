@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.PtwMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.PtwPojo" id="ptwMap">
+        <result column="cert_id"  property="certId" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="cert_type"  property="certType" />
+        <result column="cert_name"  property="certName" />
+        <result column="cmy_name"  property="cmyName" />
+        <result column="det_name"  property="detName" />
+        <result column="NAME"  property="name" />
+        <result column="star_datetime"  property="starDatetime" />
+        <result column="end_datetime"  property="endDatetime" />
+        <result column="cert_url"  property="certUrl" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			cert_id  , 
+     		     			cmy_id  , 
+     		     			cert_type  , 
+     		     			cert_name  , 
+     		     			cmy_name  , 
+     		     			det_name  , 
+     		     			NAME  , 
+     		     			star_datetime  , 
+     		     			end_datetime  , 
+     		     			cert_url  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

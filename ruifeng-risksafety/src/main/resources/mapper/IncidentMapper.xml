@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.IncidentMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.IncidentPojo" id="incidentMap">
+        <result column="acc_id"  property="accId" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="acc_name"  property="accName" />
+        <result column="acc_time"  property="accTime" />
+        <result column="acc_location"  property="accLocation" />
+        <result column="acc_type"  property="accType" />
+        <result column="acc_party"  property="accParty" />
+        <result column="loss"  property="loss" />
+        <result column="descriptions"  property="descriptions" />
+        <result column="person"  property="person" />
+        <result column="phone"  property="phone" />
+        <result column="whole_story"  property="wholeStory" />
+        <result column="acc_path"  property="accPath" />
+        <result column="employee"  property="employee" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			acc_id  , 
+     		     			cmy_id  , 
+     		     			acc_name  , 
+     		     			acc_time  , 
+     		     			acc_location  , 
+     		     			acc_type  , 
+     		     			acc_party  , 
+     		     			loss  , 
+     		     			descriptions  , 
+     		     			person  , 
+     		     			phone  , 
+     		     			whole_story  , 
+     		     			acc_path  , 
+     		     			employee  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

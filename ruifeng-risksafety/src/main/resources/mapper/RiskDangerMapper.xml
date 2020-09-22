@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.RiskDangerMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.RiskDangerPojo" id="riskDangerMap">
+        <result column="id"  property="id" />
+        <result column="company_id"  property="companyId" />
+        <result column="place_id"  property="placeId" />
+        <result column="risk_id"  property="riskId" />
+        <result column="danger_id"  property="dangerId" />
+    </resultMap>
+    
+	<sql id="BaseList">
+		id,
+		company_id,
+		place_id,
+		risk_id,
+		danger_id
+	</sql>
+    
+</mapper>

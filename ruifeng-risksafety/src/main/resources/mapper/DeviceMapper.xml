@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.DeviceMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.DevicePojo" id="deviceMap">
+        <result column="id"  property="id" />
+        <result column="company_id"  property="companyId" />
+        <result column="place_id"  property="placeId" />
+        <result column="name"  property="name" />
+        <result column="number"  property="number" />
+        <result column="purchase_date"  property="purchaseDate" />
+        <result column="spend_money"  property="spendMoney" />
+        <result column="type"  property="type" />
+        <result column="test_term"  property="testTerm" />
+        <result column="actual_status"  property="actualStatus" />
+        <result column="charge_user_id"  property="chargeUserId" />
+        <result column="del_flg"  property="delFlg" />
+        <result column="remark"  property="remark" />
+        <result column="create_by"  property="createBy" />
+        <result column="create_time"  property="createTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="update_time"  property="updateTime" />
+    </resultMap>
+    
+	<sql id="BaseList">
+		id,
+		company_id,
+		place_id,
+		name,
+		number,
+		purchase_date,
+		spend_money,
+		type,
+		test_term,
+		actual_status,
+		charge_user_id,
+		del_flg,
+		remark,
+		create_by,
+		create_time,
+		update_by,
+		update_time
+	</sql>
+    
+</mapper>

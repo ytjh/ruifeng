@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.UrgentTreatmentMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.UrgentTreatmentPojo" id="urgentTreatmentMap">
+        <result column="dis_id"  property="disId" />
+        <result column="alarm_name"  property="alarmName" />
+        <result column="urg_type"  property="urgType" />
+        <result column="start_time"  property="startTime" />
+        <result column="location"  property="location" />
+        <result column="dis_person"  property="disPerson" />
+        <result column="urg_scope"  property="urgScope" />
+        <result column="person"  property="person" />
+        <result column="phone"  property="phone" />
+        <result column="CODE"  property="code" />
+        <result column="plan_id"  property="planId" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			dis_id  , 
+     		     			alarm_name  , 
+     		     			urg_type  , 
+     		     			start_time  , 
+     		     			location  , 
+     		     			dis_person  , 
+     		     			urg_scope  , 
+     		     			person  , 
+     		     			phone  , 
+     		     			CODE  , 
+     		     			plan_id  , 
+     		     			cmy_id  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.ProtectThingMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.ProtectThingPojo" id="protectThingMap">
+        <result column="id"  property="id" />
+        <result column="company_id"  property="companyId" />
+        <result column="name"  property="name" />
+        <result column="count"  property="count" />
+        <result column="buy_date"  property="buyDate" />
+        <result column="spend_money"  property="spendMoney" />
+        <result column="distribute_date"  property="distributeDate" />
+        <result column="del_flg"  property="delFlg" />
+        <result column="remark"  property="remark" />
+        <result column="create_by"  property="createBy" />
+        <result column="create_time"  property="createTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="update_time"  property="updateTime" />
+    </resultMap>
+    
+	<sql id="BaseList">
+		id,
+		company_id,
+		name,
+		count,
+		buy_date,
+		spend_money,
+		distribute_date,
+		del_flg,
+		remark,
+		create_by,
+		create_time,
+		update_by,
+		update_time
+	</sql>
+    
+</mapper>

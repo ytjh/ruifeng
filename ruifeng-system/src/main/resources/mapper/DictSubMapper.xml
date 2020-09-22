@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.DictSubMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.DictSubPojo" id="dictSubMap">
+        <result column="sub_dict_id"  property="subDictId" />
+        <result column="dict_id"  property="dictId" />
+        <result column="sub_dict_value"  property="subDictValue" />
+        <result column="sub_dict_name"  property="subDictName" />
+        <result column="sub_sort"  property="subSort" />
+        <result column="create_by"  property="createBy" />
+        <result column="create_time"  property="createTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="del_flg"  property="delFlg" />
+        <result column="remark"  property="remark" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			sub_dict_id  , 
+     		     			dict_id  , 
+     		     			sub_dict_value  , 
+     		     			sub_dict_name  , 
+     		     			sub_sort  , 
+     		     			create_by  , 
+     		     			create_time  , 
+     		     			update_by  , 
+     		     			update_time  , 
+     		     			del_flg  , 
+     		     			remark 
+     		 		 </sql>
+    
+</mapper>

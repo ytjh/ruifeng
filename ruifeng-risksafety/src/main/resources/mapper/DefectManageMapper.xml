@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruifeng.mapper.DefectManageMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ruifeng.pojo.DefectManagePojo" id="defectManageMap">
+        <result column="hid_id"  property="hidId" />
+        <result column="risk_type"  property="riskType" />
+        <result column="ins_dep"  property="insDep" />
+        <result column="ins_person"  property="insPerson" />
+        <result column="ins_location"  property="insLocation" />
+        <result column="problem"  property="problem" />
+        <result column="hid_photo"  property="hidPhoto" />
+        <result column="consequence"  property="consequence" />
+        <result column="accident"  property="accident" />
+        <result column="opinion"  property="opinion" />
+        <result column="person"  property="person" />
+        <result column="hid_time"  property="hidTime" />
+        <result column="cmy_id"  property="cmyId" />
+        <result column="remark"  property="remark" />
+        <result column="create_time"  property="createTime" />
+        <result column="create_by"  property="createBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="update_by"  property="updateBy" />
+        <result column="del_flg"  property="delFlg" />
+    </resultMap>
+    
+      <sql id="BaseList">
+     		     			hid_id  , 
+     		     			risk_type  , 
+     		     			ins_dep  , 
+     		     			ins_person  , 
+     		     			ins_location  , 
+     		     			problem  , 
+     		     			hid_photo  , 
+     		     			consequence  , 
+     		     			accident  , 
+     		     			opinion  , 
+     		     			person  , 
+     		     			hid_time  , 
+     		     			cmy_id  , 
+     		     			remark  , 
+     		     			create_time  , 
+     		     			create_by  , 
+     		     			update_time  , 
+     		     			update_by  , 
+     		     			del_flg 
+     		 		 </sql>
+    
+</mapper>
